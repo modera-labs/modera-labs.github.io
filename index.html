@@ -66,7 +66,11 @@
 <div class="wrap">
 <h2>Support</h2>
 <p class="lead">Write to us by email. Please tell us your macOS, Stream Deck and After Effects versions.</p>
-<a class="btn" href="mailto:moderalabs.support@gmail.com">moderalabs.support@gmail.com</a>
+<div class="mail">
+<a class="btn" href="mailto:moderalabs.support@gmail.com?subject=Deck%20for%20After%20Effects">moderalabs.support@gmail.com</a>
+<button class="btn ghost" type="button" id="copy" aria-live="polite">Copy address</button>
+</div>
+<p class="hint">If nothing opens when you click the address, copy it and write from any mail service.</p>
 
 <h3>Deck for After Effects — common questions</h3>
 <details>
@@ -99,9 +103,13 @@
 
 <footer>
 <div class="wrap">
-<p>© 2026 Modera Labs · <a href="privacy.html">Privacy Policy</a> · <a href="mailto:moderalabs.support@gmail.com">Support</a></p>
+<p>© 2026 Modera Labs · <a href="privacy.html">Privacy Policy</a> · <a href="#support">Support</a></p>
 <p>Adobe and After Effects are either registered trademarks or trademarks of Adobe in the United States and/or other countries. Stream Deck and Elgato are trademarks of Corsair Memory, Inc. Modera Labs is not affiliated with or endorsed by Adobe, Elgato or Video Copilot.</p>
 </div>
 </footer>
+<script>
+document.getElementById('copy').addEventListener('click',function(){var b=this,a='moderalabs.support@gmail.com';function ok(){b.textContent='Copied ✓';setTimeout(function(){b.textContent='Copy address'},2000)}
+if(navigator.clipboard){navigator.clipboard.writeText(a).then(ok,function(){prompt('Copy the address:',a)})}else{prompt('Copy the address:',a)}});
+</script>
 </body>
 </html>

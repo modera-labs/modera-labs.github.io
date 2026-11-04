@@ -29,6 +29,10 @@ li{margin:4px 0}
 .tag{display:inline-block;font-size:13px;padding:3px 10px;border-radius:999px;background:rgba(14,165,165,.15);color:var(--acc2);margin:0 6px 6px 0}
 .btn{display:inline-block;background:var(--acc);color:#fff;font-weight:600;padding:12px 22px;border-radius:8px;margin-top:10px}
 .btn:hover{background:var(--acc2);text-decoration:none;box-shadow:0 0 18px var(--glow)}
+.mail{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.mail .btn{margin-top:0}
+button.btn{font:inherit;font-weight:600;cursor:pointer}
+.hint{color:var(--muted);font-size:14px;margin:12px 0 0}
 .btn.ghost{background:transparent;border:1px solid var(--line);color:var(--text)}
 details{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin:12px 0}
 summary{cursor:pointer;font-weight:600}
